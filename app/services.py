@@ -14,9 +14,9 @@ def increment_daily():
         cur.execute("""
          UPDATE StreakTB
         SET
-        streak = streak + (CURRENT_DATE - last_updated_date),
-        last_updated_date = CURRENT_DATE
-        WHERE last_updated_date < CURRENT_DATE;
+        streak = streak + (CURRENT_DATE - last_increment_date),
+        last_increment_date = CURRENT_DATE
+        WHERE last_increment_date < CURRENT_DATE;
         """)
 
         
