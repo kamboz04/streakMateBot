@@ -41,7 +41,7 @@ def main():
 
     app.job_queue.run_daily(
         daily_job,
-        time=time(hour=2, minute=50)
+        time=time(hour=3, minute=30)
     )
 
 
